@@ -1,10 +1,12 @@
 public class Main
 {
-    public static void main(Strings[] args)
+    public static void main(String[] args)
     {
         String info;
-        Scoreboard game = new Scoreboard("Red, Blue");
-        info = game.getScore;
-        System.out.println(info);    
+        Scoreboard game = new Scoreboard("Red", "Blue");
+        info = game.getScore();
+        System.out.println(info);
+        game.recordPlay(1);
+        System.out.print(info);
     }
 }
