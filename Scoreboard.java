@@ -21,6 +21,14 @@ public class Scoreboard
 
     public void recordPlay(int score)
     {
-        
+        if(teamOne.equals(activeTeam))
+        {
+            teamOneScore += score;
+        }
+            if(score == 0)
+            {
+                if(activeTeam.equals(teamOne)) activeTeam = teamTwo;
+                else if(activeTeam.equals(teamTwo)) activeTeam = teamOne; 
+            }
     }
 }
