@@ -25,10 +25,10 @@ public class Scoreboard
         {
             teamOneScore += score;
         }
-            if(score == 0)
-            {
-                if(activeTeam.equals(teamOne)) activeTeam = teamTwo;
-                else if(activeTeam.equals(teamTwo)) activeTeam = teamOne; 
-            }
+        if(score == 0)
+        {
+            if(activeTeam.equals(teamOne)) activeTeam = teamTwo;
+            else if(activeTeam.equals(teamTwo)) activeTeam = teamOne;
+        }
     }
 }
